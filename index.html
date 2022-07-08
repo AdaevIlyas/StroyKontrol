@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/adaptive.css">
+  <script src="js/script.js"></script>
+  <!-- Свайпер -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <!-- JQ -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <title>СтройКонтроль</title>
+</head>
+
+<body>
+  <div class="box">
+    <header>
+      <div class="menuToggle__block"></div>
+      <div id="menuToggle">
+        <!--
+        A fake / hidden checkbox is used as click reciever,
+        so you can use the :checked selector on it.
+        -->
+        <input type="checkbox" />
+
+        <!--
+        Some spans to act as a hamburger.
+        
+        They are acting like a real hamburger,
+        not that McDonalds stuff.
+        -->
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+
+        <!--
+        Too bad the menu has to be inside of the button
+        but hey, it's pure CSS magic.
+        -->
+        <ul id="menu">
+          <a href="#">
+            <li>Главная</li>
+          </a>
+          <a href="#">
+            <li>О нас</li>
+          </a>
+          <a href="#">
+            <li>Продукция</li>
+          </a>
+          <a href="#">
+            <li>Процесс</li>
+          </a>
+          <a href="#">
+            <li>Надёжность</li>
+          </a>
+          <a href="#">
+            <li>Клиенты</li>
+          </a>
+          <a href="#">
+            <li>Связь с нами</li>
+          </a>
+          <a href="#">
+            <li class="burger__demo-btn">Заказать демо</li>
+          </a>
+        </ul>
+      </div>
+      <div class="header-logo">
+        <a href="#">
+          <img class="header-logo__img" src="img/header/logo.svg" alt="Логотип">
+        </a>
+      </div>
+      <nav>
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#" class="nav-item__link">Главная</a></li>
+          <li class="nav-item"><a href="#" class="nav-item__link">О нас</a></li>
+          <li class="nav-item"><a href="#" class="nav-item__link">Продукция</a></li>
+          <li class="nav-item"><a href="#" class="nav-item__link">Процесс</a></li>
+          <li class="nav-item"><a href="#" class="nav-item__link">Надёжность</a></li>
+          <li class="nav-item"><a href="#" class="nav-item__link">Клиенты</a></li>
+          <li class="nav-item"><a href="#" class="nav-item__link">Связаться с нами</a></li>
+          <li class="nav-item"><a href="#" class="nav-item__link_btn">Заказать демо</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+
+      <section>
+        <div class="container">
+          <div class="begin">
+            <h1 class="begin__heading">Умная доставка материалов для сложных строительных площадок</h1>
+            <div class="begin__btn">
+              <a href="#" class="btn btn_moon btn_indent">Заказать демо</a>
+              <a href="#" class="btn btn_light">Подробнее</a>
+            </div>
+            <div class="begin-main-pictures">
+              <img class="begin-main__img" src="img/main/begin/building.png" alt="Картинка стройки">
+            </div>
+            <div class="begin-secondary-pictures">
+              <img class="begin-secondary__img" src="img/main/begin/cars.png" alt="Картинка спец.техники">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="dignities">
+            <div class="block-text-center dignities-card">
+              <img class="icon dignities-card__img" src="img/main/dignities/improving.svg" alt="">
+              <h4 class="title dignities-card__heading">Повышение эффективности</h4>
+              <p class="addition dignities-card__addition">Эффективные проекты стоят дешевле
+                и завершаются в срок.</p>
+            </div>
+            <div class="block-text-center dignities-card">
+              <img class="icon dignities-card__img" src="img/main/dignities/loss.svg" alt="">
+              <h4 class="title dignities-card__heading">Снижение потерь</h4>
+              <p class="addition dignities-card__addition">Тщательно отслеживайте движение стройматериалов, чтобы
+                избежать
+                краж и повреждений.</p>
+            </div>
+            <div class="block-text-center dignities-card">
+              <img class="icon dignities-card__img" src="img/main/dignities/safety.svg" alt="">
+              <h4 class="title dignities-card__heading">Повышение безопасности</h4>
+              <p class="addition dignities-card__addition">Обеспечьте здоровье и благополучие людей, работающих на вашей
+                площадке.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="block-text-center construction">
+            <h2 class="heading construction__heading">Строительство - это хаос</h2>
+            <p class="description construction__description">Хаос может быть удивительной творческой силой, воздвигающая
+              новые здания из пыли.
+              <br>
+              Хаос вызывает несчастные случаи, задержки и потери. Он вводит проекты в стресс и разочарование.
+              <br>
+              Это означает, что вы действительно не контролируете ситуацию.
+            </p>
+            <div class="construction-picture">
+              <img class="construction-picture__img" src="img/main/construction/workers.png" alt="Строители">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="slogan">
+            <h2 class="heading slogan__heading">Пора навести порядок на вашей стройплощадке
+              <br>
+              и взять под контроль свой проект
+            </h2>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="care-delivery">
+            <div class="care-delivery-block">
+              <h2 class="heading care-delivery-block__heading">
+                Мы заботимся о доставке на стройплощадку и о людях,<br> которые на них рассчитывают
+              </h2>
+              <p class="description care-delivery-block__description">
+                Мы знаем всё о гордости от сияющего нового здания.<br> Нам также известно всё о
+                разочаровании от попыток завершить проект в срок и в рамках бюджета.
+              </p>
+              <div class="care-delivery-block-limit">
+                <p class="care-delivery-block-limit__a-call">Мы здесь, чтобы помочь.</p>
+              </div>
+            </div>
+            <div class="care-delivery-picture">
+              <img class="care-delivery-picture__img" src="img/main/care and delivery/foreman.png" alt="Рабочие">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="sponsor">
+            <ul class="sponsors-list">
+              <li class="sponsors-item">
+                <img class="sponsors-item__img" src="img/main/sponsors/besix.svg" alt="">
+              </li>
+              <li class="sponsors-item">
+                <img class="sponsors-item__img" src="img/main/sponsors/six.svg" alt="">
+              </li>
+              <li class="sponsors-item">
+                <img class="sponsors-item__img" src="img/main/sponsors/echo.svg" alt="">
+              </li>
+              <li class="sponsors-item">
+                <img class="sponsors-item__img" src="img/main/sponsors/kajima.svg" alt="">
+              </li>
+              <li class="sponsors-item">
+                <img class="sponsors-item__img" src="img/main/sponsors/lafarge.svg" alt="">
+              </li>
+              <li class="sponsors-item">
+                <img class="sponsors-item__img" src="img/main/sponsors/skanska.svg" alt="">
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="what-is">
+            <div class="block-text-center what-is-block">
+              <h2 class="heading what-is-block__heading">
+                Что такое СтройКонтроль?
+              </h2>
+              <p class="description what-is-block__description">
+                СтройКонтроль - это интеллектуальная система управления
+                доставкой,<br>предоставляющая информацию и контроль материалов на сложных строительных<br>площадках в
+                режиме
+                реального времени.
+              </p>
+            </div>
+            <div class="what-is-cards">
+              <div class="what-is-card">
+                <div class="what-is-review">
+                  <h4 class="title what-is-card__title">Отслеживайте доставку по всей цепочке поставок</h4>
+                  <p class="addition what-is-card__addition">От поставщика до субподрядчика - вы всегда знаете, где<br>
+                    находятся ваши материалы, благодаря чему обычные отходы уходят в прошлое и сокращаются несчастные
+                    случаи на месте.</p>
+                </div>
+                <div class="what-is-card__pictures">
+                  <img src="img/main/what-is/tracking.png" alt="Этап" class="what-is-card__img">
+                </div>
+              </div>
+              <div class="what-is-card">
+                <div class="what-is-card__pictures">
+                  <img src="img/main/what-is/optimize.png" alt="Этап" class="what-is-card__img">
+                </div>
+                <div class="what-is-review">
+                  <h4 class="title what-is-card__title">Оптимизируйте и контролируйте свое прибытие на место</h4>
+                  <p class="addition what-is-card__addition">Транспортные средства доставки прибывают в
+                    <br>фиксированные
+                    промежутки времени в заранее назначенные отсеки, где разгрузочное оборудование готово и ждет их.
+                  </p>
+                </div>
+              </div>
+              <div class="what-is-card">
+                <div class="what-is-review">
+                  <h4 class="title what-is-card__title">Возьмите под контроль данные в режиме реального времени</h4>
+                  <p class="addition what-is-card__addition">Интеллектуальная отчетность дает вам возможность принимать
+                    решения в зависимости от того, как обстоят дела в <br> данный момент. Больше никаких ручных отчетов
+                    по
+                    заливке <br> бетона или ежемесячной проверки 10.000 накладных со <br> счетами, все это доступно
+                    онлайн
+                    без
+                    каких-либо усилий.</p>
+                </div>
+                <div class="what-is-card__pictures">
+                  <img src="img/main/what-is/сontrol.png" alt="Этап" class="what-is-card__img">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="delivery">
+            <div class="block-text-center delivery-block">
+              <h2 class="heading delivery-block__heading">Доставка стала проще</h2>
+              <p class="description delivery-block__description">Мы позаботимся обо всех ваших различных поставках и
+                их<br>
+                многочисленных специализированных требованиях к разгрузке.</p>
+            </div>
+            <div class="delivery-main delivery-main-adaptive-hidden">
+              <div class="delivery-main__cell">
+                <div class="delivery-main__picture">
+                  <img src="img/main/delivery/сoncrete.svg" alt="" class="icon delivery-main__icon">
+                </div>
+                <div class="delivery-main__block">
+                  <h4 class="title delivery-main__title">Бетон</h4>
+                  <p class="addition delivery-main__addition">Поставки бетона точно планируются, а его состояние
+                    контролируется, что обеспечивает
+                    максимально возможное время для установки.</p>
+                </div>
+              </div>
+              <div class="delivery-main__cell">
+                <div class="delivery-main__picture">
+                  <img src="img/main/delivery/disposal.svg" alt="" class="icon delivery-main__icon">
+                </div>
+                <div class="delivery-main__block">
+                  <h4 class="title delivery-main__title">Утилизация отходов</h4>
+                  <p class="addition delivery-main__addition">Отходы контролируются и сортируются, а заполненность
+                    контейнеров отслеживается в
+                    цифровом виде.</p>
+                </div>
+              </div>
+              <div class="delivery-main__cell">
+                <div class="delivery-main__picture">
+                  <img src="img/main/delivery/formwork.svg" alt="" class="icon delivery-main__icon">
+                </div>
+                <div class="delivery-main__block">
+                  <h4 class="title delivery-main__title">Опалубка</h4>
+                  <p class="addition delivery-main__addition">Вся опалубка отслеживается от прибытия до отправления, а
+                    ее
+                    состояние
+                    контролируется, что сводит к минимуму потери и повреждения.</p>
+                </div>
+              </div>
+              <div class="delivery-main__cell">
+                <div class="delivery-main__picture">
+                  <img src="img/main/delivery/panels.svg" alt="" class="icon delivery-main__icon">
+                </div>
+                <div class="delivery-main__block">
+                  <h4 class="title delivery-main__title">Сборные панели</h4>
+                  <p class="addition delivery-main__addition">Сборные панели прибывают по очереди, их хранение на месте
+                    отслеживается, а их
+                    установка планируется и контролируется.</p>
+                </div>
+              </div>
+              <div class="delivery-main__cell">
+                <div class="delivery-main__picture">
+                  <img src="img/main/delivery/facades.svg" alt="" class="icon delivery-main__icon">
+                </div>
+                <div class="delivery-main__block">
+                  <h4 class="title delivery-main__title">Фасады</h4>
+                  <p class="addition delivery-main__addition">Элементы фасада поступают последовательно, их сборка
+                    контролируется, а перемещение
+                    отслеживается.</p>
+                </div>
+              </div>
+              <div class="delivery-main__cell">
+                <div class="delivery-main__picture">
+                  <img src="img/main/delivery/finishing.svg" alt="" class="icon delivery-main__icon">
+                </div>
+                <div class="delivery-main__block">
+                  <h4 class="title delivery-main__title">Отделка</h4>
+                  <p class="addition delivery-main__addition">Материалы поступают точно в срок, маркируются и детально
+                    отслеживаются для
+                    установки.</p>
+                </div>
+              </div>
+              <div class="delivery-main__cell">
+                <div class="delivery-main__picture">
+                  <img src="img/main/delivery/forest.svg" alt="" class="icon delivery-main__icon">
+                </div>
+                <div class="delivery-main__block">
+                  <h4 class="title delivery-main__title">Строительные леса</h4>
+                  <p class="addition delivery-main__addition">Строительные леса отслеживаются от получения до хранения,
+                    использования и возврата,
+                    поэтому всегда ясно, что на месте и где.</p>
+                </div>
+              </div>
+              <div class="delivery-main__cell">
+                <div class="delivery-main__picture">
+                  <img src="img/main/delivery/equipment.svg" alt="" class="icon delivery-main__icon">
+                </div>
+                <div class="delivery-main__block">
+                  <h4 class="title delivery-main__title">Оборудование</h4>
+                  <p class="addition delivery-main__addition">Оборудование и операторы гарантированно доступны в случае
+                    необходимости, а их
+                    рабочее состояние отслеживается.</p>
+                </div>
+              </div>
+              <div class="delivery-main__cell">
+                <div class="delivery-main__picture">
+                  <img src="img/main/delivery/electrics.svg" alt="" class="icon delivery-main__icon">
+                </div>
+                <div class="delivery-main__block">
+                  <h4 class="title delivery-main__title">Электрика и сантехника</h4>
+                  <p class="addition delivery-main__addition">Доставка осуществляется в точной последовательности для
+                    сложной установки, что
+                    сокращает или устраняет необходимость в хранении.</p>
+                </div>
+              </div>
+            </div>
+            <div class="content-block">
+              <div class="delivery-main">
+                <div class="delivery-main__cell">
+                  <div class="delivery-main__picture">
+                    <img src="img/main/delivery/сoncrete.svg" alt="" class="icon delivery-main__icon">
+                  </div>
+                  <div class="delivery-main__block">
+                    <h4 class="title delivery-main__title">Бетон</h4>
+                    <p class="addition delivery-main__addition">Поставки бетона точно планируются, а его состояние
+                      контролируется, что обеспечивает
+                      максимально возможное время для установки.</p>
+                  </div>
+                </div>
+                <div class="delivery-main__cell">
+                  <div class="delivery-main__picture">
+                    <img src="img/main/delivery/disposal.svg" alt="" class="icon delivery-main__icon">
+                  </div>
+                  <div class="delivery-main__block">
+                    <h4 class="title delivery-main__title">Утилизация отходов</h4>
+                    <p class="addition delivery-main__addition">Отходы контролируются и сортируются, а заполненность
+                      контейнеров отслеживается в
+                      цифровом виде.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="delivery-main">
+                <div class="delivery-main__cell">
+                  <div class="delivery-main__picture">
+                    <img src="img/main/delivery/formwork.svg" alt="" class="icon delivery-main__icon">
+                  </div>
+                  <div class="delivery-main__block">
+                    <h4 class="title delivery-main__title">Опалубка</h4>
+                    <p class="addition delivery-main__addition">Вся опалубка отслеживается от прибытия до отправления, а
+                      ее
+                      состояние
+                      контролируется, что сводит к минимуму потери и повреждения.</p>
+                  </div>
+                </div>
+                <div class="delivery-main__cell">
+                  <div class="delivery-main__picture">
+                    <img src="img/main/delivery/panels.svg" alt="" class="icon delivery-main__icon">
+                  </div>
+                  <div class="delivery-main__block">
+                    <h4 class="title delivery-main__title">Сборные панели</h4>
+                    <p class="addition delivery-main__addition">Сборные панели прибывают по очереди, их хранение на
+                      месте
+                      отслеживается, а их
+                      установка планируется и контролируется.</p>
+                  </div>
+                </div>
+              </div>
+              <div class=" delivery-main hide-content">
+                <div class="delivery-main__cell">
+                  <div class="delivery-main__picture">
+                    <img src="img/main/delivery/facades.svg" alt="" class="icon delivery-main__icon">
+                  </div>
+                  <div class="delivery-main__block">
+                    <h4 class="title delivery-main__title">Фасады</h4>
+                    <p class="addition delivery-main__addition">Элементы фасада поступают последовательно, их сборка
+                      контролируется, а перемещение
+                      отслеживается.</p>
+                  </div>
+                </div>
+                <div class="delivery-main__cell">
+                  <div class="delivery-main__picture">
+                    <img src="img/main/delivery/finishing.svg" alt="" class="icon delivery-main__icon">
+                  </div>
+                  <div class="delivery-main__block">
+                    <h4 class="title delivery-main__title">Отделка</h4>
+                    <p class="addition delivery-main__addition">Материалы поступают точно в срок, маркируются и детально
+                      отслеживаются для
+                      установки.</p>
+                  </div>
+                </div>
+              </div>
+              <div class=" delivery-main hide-content">
+                <div class="delivery-main__cell">
+                  <div class="delivery-main__picture">
+                    <img src="img/main/delivery/forest.svg" alt="" class="icon delivery-main__icon">
+                  </div>
+                  <div class="delivery-main__block">
+                    <h4 class="title delivery-main__title">Строительные леса</h4>
+                    <p class="addition delivery-main__addition">Строительные леса отслеживаются от получения до
+                      хранения,
+                      использования и возврата,
+                      поэтому всегда ясно, что на месте и где.</p>
+                  </div>
+                </div>
+                <div class="delivery-main__cell">
+                  <div class="delivery-main__picture">
+                    <img src="img/main/delivery/equipment.svg" alt="" class="icon delivery-main__icon">
+                  </div>
+                  <div class="delivery-main__block">
+                    <h4 class="title delivery-main__title">Оборудование</h4>
+                    <p class="addition delivery-main__addition">Оборудование и операторы гарантированно доступны в
+                      случае
+                      необходимости, а их
+                      рабочее состояние отслеживается.</p>
+                  </div>
+                </div>
+              </div>
+              <div class=" delivery-main hide-content">
+                <div class="delivery-main__cell">
+                  <div class="delivery-main__picture">
+                    <img src="img/main/delivery/electrics.svg" alt="" class="icon delivery-main__icon">
+                  </div>
+                  <div class="delivery-main__block">
+                    <h4 class="title delivery-main__title">Электрика и сантехника</h4>
+                    <p class="addition delivery-main__addition">Доставка осуществляется в точной последовательности для
+                      сложной установки, что
+                      сокращает или устраняет необходимость в хранении.</p>
+                  </div>
+                </div>
+              </div>
+              <p class="description delivery-block__description-card">...<i class="delivery-block__highlighting">и все
+                  остальные
+                  материалы,</i>которые поступают или
+                покидают вашу площадку</p>
+              <div class="block-text-center">
+                <button class="btn btn_moon delivery-main__btn show-more">Показать еще</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="reliability">
+            <div class="block-text-center reliability-block">
+              <h2 class="heading reliability-block__heading">Надёжность
+                <span class="reliability-block__decor"></span>
+              </h2>
+              <p class="description reliability-block__description">Благодаря надёжному строительству выигрывают все -
+                муниципальные органы<br> выполняют свои обязанности перед гражданами, инвесторы получают сертификаты<br>
+                своих
+                проектов, а генеральные подрядчики получают повышенную репутацию.</p>
+            </div>
+            <div class="reliability-cards">
+              <div class="block-text-center reliability-cards__card">
+                <img class="icon reliability-cards__icon" src="img/main/reliability/pollution.svg" alt="">
+                <h4 class="title reliability-cards__title">Сниженное загрязнение</h4>
+                <p class="addition reliability-cards__addition">При оптимизации логистики требуется меньше поездок, что
+                  приводит к <br>снижению выбросов CO<sub>2</sub><br> Выбрасываемый CO<sub>2</sub> контролируется,<br>
+                  что
+                  позволяет
+                  ставить цели и
+                  вносить ощутимые улучшения.</p>
+              </div>
+              <div class="block-text-center reliability-cards__card">
+                <img class="icon reliability-cards__icon" src="img/main/reliability/wastes.svg" alt="">
+                <h4 class="title reliability-cards__title">Улучшенное управление отходами</h4>
+                <p class="addition reliability-cards__addition">Упрощается сортировка отходов, автоматизируется
+                  утилизация отходов, а поврежденные материалы при необходимости используются повторно, что снижает
+                  затраты и стимулирует переработку и повторное использование.</p>
+              </div>
+              <div class="block-text-center reliability-cards__card">
+                <img class="icon reliability-cards__icon" src="img/main/reliability/influence.svg" alt="">
+                <h4 class="title reliability-cards__title">Улучшенное влияние на общество</h4>
+                <p class="addition reliability-cards__addition">Уменьшаются проблемы с дорожным движением и шумовое
+                  загрязнение, что улучшает жизнь местного сообщества. Улучшенное обращение с материалами и хранение
+                  означает, что рабочие также лучше защищены.</p>
+              </div>
+            </div>
+            <div class="reliability-detailed">
+              <div class="reliability-detailed-block">
+                <img class="reliability-detailed__img" src="img/main/reliability/robust-construction.svg" alt="">
+                <p class="reliability-detailed__description"><b>Надёжная конструкция</b> СтройКонтроль входит в
+                  стандартную комплектацию.</p>
+              </div>
+              <a href="#" class="reliability-detailed__details">Подробнее</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section_background">
+        <div class="container">
+          <div class="created-for">
+            <div class="created-for-main">
+              <div class="created-for-main__box">
+                <h2 class="heading created-for-main__heading">Создан для строительства</h2>
+                <ul class="created-for-main__list">
+                  <li class="created-for-main__item">
+                    <h4 class="title created-for-main__title">Хорошо виден в любых условиях</h4>
+                    <p class="addition created-for-main__addition">Независимо от того, солнечно или темно, найдется
+                      подходящий режим экрана</p>
+                  </li>
+                  <li class="created-for-main__item">
+                    <h4 class="title created-for-main__title">Поддержка международных языков</h4>
+                    <p class="addition created-for-main__addition">На современной стройке работают люди со всего мира.
+                      Язык не является проблемой для СтройКонтроля.</p>
+                  </li>
+                  <li class="created-for-main__item">
+                    <h4 class="title created-for-main__title">Работает на любом устройстве - мобильном телефоне,
+                      планшете, ноутбуке</h4>
+                    <p class="addition created-for-main__addition">Люди на разных должностях используют разные
+                      устройства. СтройКонтроль автоматически настраивается в соответствии с требованиями. Вы также
+                      можете проецировать панели мониторинга живого проекта на настенные экраны.</p>
+                  </li>
+                </ul>
+                <div class="created-for-btn-box">
+                  <a href="#" class="btn btn_light created-for__btn">Заказать демо</a>
+                  <a href="#" class="btn btn_moon created-for__btn_moon">Подробнее</a>
+                </div>
+              </div>
+              <div class="created-for-main__picture">
+                <img class="created-for-main__img" src="img/main/created-for/worker.jpg" alt="">
+              </div>
+            </div>
+            <div class="created-for-cards">
+              <div class="block-text-center created-for-cards__card">
+                <img class="icon created-for-cards__img" src="img/main/created-for/subcontractors.svg" alt="">
+                <h4 class="title created-for-cards__heading">Привлечение субподрядчика</h4>
+                <p class="addition created-for-cards__addition">Для выполнения этой работы вам понадобятся ваши
+                  субподрядчики. У нас есть проверенный и надежный процесс для этого.</p>
+              </div>
+              <div class="block-text-center created-for-cards__card">
+                <img class="icon created-for-cards__img" src="img/main/created-for/key.svg" alt="">
+                <h4 class="title created-for-cards__heading">Привлечены ключевые поставщики</h4>
+                <p class="addition created-for-cards__addition">У нас уже есть ключевые поставщики, использующие
+                  программное обеспечение, что обеспечивает еще больший контроль и прозрачность информации.</p>
+              </div>
+              <div class="block-text-center created-for-cards__card">
+                <img class="icon created-for-cards__img" src="img/main/created-for/compliance.svg" alt="">
+                <h4 class="title created-for-cards__heading">100% соответствие</h4>
+                <p class="addition created-for-cards__addition">У нас есть безупречный список обеспечения соответствия
+                  требованиям, которые необходимы вам для успешного выполнения проекта с помощью СтройКонтроль.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="how-to-work">
+            <div class="how-to-work-main">
+              <h2 class="heading how-to-work-main__headign">Как с нами работать</h2>
+              <p class="description how-to-work-main__description">Начать работу со СтройКонтроль легко, достаточно
+                заказать демо-версию.</p>
+              <img class="how-to-work-main__img" src="img/main/how-to-work/worker.png" alt="">
+            </div>
+            <div class="how-to-work-steps">
+              <div class="how-to-work-step">
+                <div class="how-to-work-step__number">1</div>
+                <div class="how-to-work-step__heading">
+                  <h4 class="title how-to-work-step__title">Заказать демо</h4>
+                  <p class="addition how-to-work-step__addition">Вы увидите презентацию, в которой подробно объясняется,
+                    как работает СтройКонтроль
+                    для решения задач строительной логистики в таких сложных проектах, как ваш.</p>
+                </div>
+              </div>
+              <div class="how-to-work-step">
+                <div class="how-to-work-step__number">2</div>
+                <div class="how-to-work-step__heading">
+                  <h4 class="title how-to-work-step__title">Согласование сделки</h4>
+                  <p class="addition how-to-work-step__addition">Мы обсудим ваш строительный проект и предложим
+                    реализацию СтройКонтроль, которая
+                    идеально соответствует вашим потребностям и будет иметь для вас ценность.</p>
+                </div>
+              </div>
+              <div class="how-to-work-step">
+                <div class="how-to-work-step__number">3</div>
+                <div class="how-to-work-step__heading">
+                  <h4 class="title how-to-work-step__title">Подготовка</h4>
+                  <p class="addition how-to-work-step__addition">Мы полностью обучаем вашу команду тому, как
+                    использовать систему, с помощью
+                    онлайн-видеоуроков и обеспечиваем постоянную всестороннюю поддержку.</p>
+                </div>
+              </div>
+              <div class="how-to-work-step">
+                <div class="how-to-work-step__number">4</div>
+                <div class="how-to-work-step__heading">
+                  <h4 class="title how-to-work-step__title">Внедрение и интеграция</h4>
+                  <p class="addition how-to-work-step__addition">Мы настраиваем программное обеспечение так, чтобы оно
+                    точно моделировало вашу
+                    площадку, а затем помогаем вам интегрировать его с программным обеспечением Business Intelligence
+                    для получения<br> новых мощных аналитических данных.</p>
+                </div>
+              </div>
+              <div class="how-to-work-btn-box">
+                <a href="#" class="btn btn_moon btn_indent">Заказать демо</a>
+                <a href="#" class="btn btn_light">Подробнее</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="why-us">
+            <div class="block-text-center why-us-block">
+              <h2 class="heading why-us-block__heading">Почему нужно выбрать нас?</h2>
+              <p class="description why-us-block__description">В строительной логистике всегда есть возможности для
+                улучшения.</p>
+            </div>
+            <div class="why-us-main">
+              <div class="why-us-main-cards">
+                <div class="why-us-main-cards__card">
+                  <div class="why-us-main-cards__picture">
+                    <img src="img/main/why-us/po.svg" alt="" class="icon why-us-main-cards__icon">
+                  </div>
+                  <div class="why-us-main-cards__text">
+                    <h4 class="title why-us-main-cards__title">Отмеченное наградами ПО</h4>
+                    <p class="addition why-us-main-cards__addition">Всемирно известное программное обеспечение,
+                      признанное государственными
+                      учреждениями, инновационными группами и техническими организациями</p>
+                  </div>
+                </div>
+                <div class="why-us-main-cards__card">
+                  <div class="why-us-main-cards__picture">
+                    <img src="img/main/why-us/potential.svg" alt="" class="icon why-us-main-cards__icon">
+                  </div>
+                  <div class="why-us-main-cards__text">
+                    <h4 class="title why-us-main-cards__title">Большой потенциал</h4>
+                    <p class="addition why-us-main-cards__addition">Входит в топ-25 самых многообещающих стартапов
+                      ConTech по версии Cemex Ventures,
+                      Moscow Consulting Group, BuiltWorld и PwC</p>
+                  </div>
+                </div>
+                <div class="why-us-main-cards__card">
+                  <div class="why-us-main-cards__picture">
+                    <img src="img/main/why-us/choice.svg" alt="" class="icon why-us-main-cards__icon">
+                  </div>
+                  <div class="why-us-main-cards__text">
+                    <h4 class="title why-us-main-cards__title">Выбор лидеров рынка</h4>
+                    <p class="addition why-us-main-cards__addition">Рекомендуемый поставщик технологий для 3 из 10
+                      ведущих генеральных подрядчиков в
+                      Европе</p>
+                  </div>
+                </div>
+                <div class="why-us-main-cards__card">
+                  <div class="why-us-main-cards__picture">
+                    <img src="img/main/why-us/development.svg" alt="" class="icon why-us-main-cards__icon">
+                  </div>
+                  <div class="why-us-main-cards__text">
+                    <h4 class="title why-us-main-cards__title">Устойчивое развитие и безопасность</h4>
+                    <p class="addition why-us-main-cards__addition">Способствует снижению выбросов CO2 и повышает
+                      безопасность на месте</p>
+                  </div>
+                </div>
+              </div>
+              <div class="why-us-main-comment">
+                <div class="swiper">
+                  <!-- Additional required wrapper -->
+                  <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                      <div class="why-us-main-comment-text">
+                        <p class="why-us-main-comment-text__description">
+                          Мы видим огромный потенциал в таких решениях, как СтройКонтроль, и хотим использовать их для
+                          улучшения наших строительных процессов.
+                        </p>
+                      </div>
+                      <div class="why-us-main-comment-avatar">
+                        <img src="img/main/why-us/avatar.jpg" alt="" class="why-us-main-comment-avatar__icon">
+                        <div class="why-us-main-comment-avatar__block-name">
+                          <p class="why-us-main-comment-avatar__name">Волков Матвей</p>
+                          <p class="why-us-main-comment-avatar__post">Генеральный директор ООО “СпецСтрой”</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="why-us-main-comment-text">
+                        <p class="why-us-main-comment-text__description">
+                          У СтройКонтроль огромный потенциал! Эта система действительно помогает и улучшает строительный
+                          процесс.
+                        </p>
+                      </div>
+                      <div class="why-us-main-comment-avatar">
+                        <img src="img/main/why-us/avatar2.jpg" alt="" class="why-us-main-comment-avatar__icon">
+                        <div class="why-us-main-comment-avatar__block-name">
+                          <p class="why-us-main-comment-avatar__name">Дорохов Мирон</p>
+                          <p class="why-us-main-comment-avatar__post">Генеральный директор ООО “СибирьСтрой”</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- If we need pagination -->
+                  <div class="swiper-pagination"></div>
+
+                  <!-- If we need navigation buttons -->
+                  <!-- <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div> -->
+
+                  <!-- If we need scrollbar -->
+                  <!-- <div class="swiper-scrollbar"></div> -->
+                </div>
+                <script>
+                  const swiper = new Swiper('.swiper', {
+                    // Optional parameters
+                    direction: 'horizontal',
+                    loop: true,
+
+                    // If we need pagination
+                    pagination: {
+                      el: '.swiper-pagination',
+                      clickable: true,
+                    },
+
+                    // Navigation arrows
+                    navigation: {
+                      nextEl: '.swiper-button-next',
+                      prevEl: '.swiper-button-prev',
+                    },
+
+                    // And if we need scrollbar
+
+                    effect: 'slide'
+                  });
+                </script>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="achiev">
+            <div class="achiev__card">
+              <img src="img/main/achievements/tools.svg" alt="" class="achiev__img">
+              <p class="addition achiev__addition">50 лучших инструментов ConTech</p>
+            </div>
+            <div class="achiev__card">
+              <img src="img/main/achievements/25-startup.svg" alt="" class="achiev__img">
+              <p class="addition achiev__addition">25 лучших стартапов ConTech в ЕС</p>
+            </div>
+            <div class="achiev__card">
+              <img src="img/main/achievements/50-startup.svg" alt="" class="achiev__img">
+              <p class="addition achiev__addition">50 лучших стартапов Global ConTech</p>
+            </div>
+            <div class="achiev__card">
+              <img src="img/main/achievements/50-startup-two.svg" alt="" class="achiev__img">
+              <p class="addition achiev__addition">2018 - 50 лучших стартапов ЕС PropTech</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="want">
+            <h2 class="want__description">
+              Готовы оптимизировать логистику доставки для вашего сложного проекта?
+            </h2>
+            <div class="want-btn-box">
+              <a href="#" class="btn btn_moon btn_indent btn_moon_background">Заказать демо</a>
+              <a href="#" class="btn btn_light btn_light_background">Связаться с нами</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="info">
+          <div class="connection">
+            <div class="connection-logo">
+              <img src="img/logo.svg" alt="" class="connection-logo__img">
+            </div>
+            <div class="connection-address">
+              <p class="addition connection-address__addition">г. Москва</p>
+              <p class="addition connection-address__addition">Пресненская наб., 88, оф. 527</p>
+            </div>
+            <div class="connection-links">
+              <a href="mailto:info@stroycontrol.ru" class="addition connection-links__link">info@stroycontrol.ru</a>
+              <a href="tel:+79451234567" class="addition connection-links__link">+7 (945) 123-45-67</a>
+            </div>
+            <div class="connection-social">
+              <a href="#" class="connection-social__link">
+                <svg class="connection-social__icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path class="connection-social__icon_path"
+                    d="M12 0C5.39999 0 0 5.40964 0 12.0723C0 18.0964 4.39199 23.0964 10.128 24V15.5663H7.07999V12.0723H10.128V9.40964C10.128 6.38554 11.916 4.72289 14.664 4.72289C15.972 4.72289 17.34 4.95181 17.34 4.95181V7.92771H15.828C14.34 7.92771 13.872 8.85542 13.872 9.80723V12.0723H17.208L16.668 15.5663H13.872V24C16.6997 23.5516 19.2746 22.103 21.1319 19.9157C22.9892 17.7284 24.0064 14.9466 24 12.0723C24 5.40964 18.6 0 12 0Z"
+                    fill="#73787C" fill-opacity="0.5" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="company-links">
+            <div class="product">
+              <p class="title footer-title product__title">Наш продукт</p>
+              <div class="footer__links">
+                <a href="#" class="addition footer-link-indent product__link">Процесс</a>
+                <a href="#" class="addition product__link">Продукция</a>
+              </div>
+            </div>
+            <div class="service">
+              <p class="title footer-title service__title">Обслуживание</p>
+              <div class="footer__links">
+                <a href="#" class="addition footer-link-indent service__link">Клиенты</a>
+                <a href="#" class="addition service__addition">Надёжность</a>
+              </div>
+            </div>
+            <div class="company">
+              <p class="title footer-title product__title">Компания</p>
+              <div class="footer__links">
+                <a href="#" class="addition footer-link-indent company__link">О нас</a>
+                <a href="#" class="addition company__link">Связаться с нами</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="rights">
+          <a href="#" class="addition rights__link">© 2020 СтройКонтроль, Все права защищены.</a>
+          <a href="#" class="addition rights__link">Политика конфиденциальности</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="js/script.js"></script>
+  <h2 class="aboba" style="color: red">Hello</h2>
+</body>
+
+</html>
