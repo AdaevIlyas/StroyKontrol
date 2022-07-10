@@ -929,10 +929,8 @@ header {
   display: flex;
   justify-content: space-between;
   border-top: 1px solid #DADEDF;
-  border-bottom: 1px solid #DADEDF;
   padding-top: 33px;
   padding-bottom: 33px;
-  margin-bottom: 5px;
 }
 
 /* burger */
