@@ -166,6 +166,7 @@ header {
   line-height: 30px;
   color: #72787D;
   padding-bottom: 5px;
+  transition: color .07s ease-in-out;
 }
 
 .nav-item__link::after {
@@ -177,6 +178,10 @@ header {
   -webkit-transition: width .3s ease-in-out;
   -moz--transition: width .3s ease-in-out;
   transition: width .3s ease-in-out;
+}
+
+.nav-item__link:active {
+  color: #FFD042;
 }
 
 .nav-item__link:hover::after {
