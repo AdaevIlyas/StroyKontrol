@@ -966,14 +966,6 @@ header {
   transition: color 0.3s ease;
 }
 
-#menuToggle a:hover {
-  color: #FFD042;
-}
-
-#menuToggle a:active {
-  color: #FFD042;
-}
-
 
 #menuToggle input {
   display: block;
@@ -1075,6 +1067,15 @@ header {
 #menu li {
   padding: 10px 0;
   font-size: 22px;
+  transition: font-weight 0.10s ease-in-out;
+}
+
+#menu li:active {
+  font-weight: bold;
+}
+
+#menu li:hover {
+  font-weight: bold;
 }
 
 /*
